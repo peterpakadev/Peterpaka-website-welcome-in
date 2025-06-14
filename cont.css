@@ -1,0 +1,156 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}*
+body{
+  font-family: Arial, sans-serif;
+padding: 0;
+margin: 0;
+margin-bottom: 0;
+font-size: 10px;
+overflow-x: hidden;
+background-color: #9BAFF9 ;
+}
+header{
+  background-color: rgba(66, 68, 90, 1);
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+}
+
+@media (max-width: 768px){
+  header {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    font-size: 10px;
+  }
+}
+
+header nav ul{
+list-style: none;
+margin: 0;
+padding: 5px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+}
+
+header nav ul li{
+  display: inline-block;
+  
+}
+header nav a{
+  color: white;
+  transition: text-shadow 0.1s ease-out;
+  text-decoration: none;
+  justify-content: space-between;
+  font-size: 20px;
+}
+header nav a:hover{
+  color: orange;
+  text-shadow: 2px 2px 5px rgba(106, 13, 156, 1) ;
+}
+header nav a:active{
+  color: purple;
+}
+.img {
+  position: relative;cursor: pointer;
+  left: 40px;
+  right: 0;
+  transition: box-shadow 0.1s ease-out;
+}
+.profile{
+object-fit: cover;
+border-radius: 50%;
+width: 95px;
+height: 93px;
+border: 3px solid rgba(221, 195, 19, 1);
+box-shadow: 0 0 30px rgba(135, 217, 143, 1);
+animation: rotate 3s  1 reverse;
+
+}
+.img :hover {
+  box-shadow: 0 0 10px 5px rgba(255, 105, 180, 0.7);
+  transform: scale(1.05);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+      max-width: 800px;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      border-radius: 10%;
+      background-image: radial-gradient(circle, #FFE6C6, #C6FFF5, #FFEFC6);
+      padding: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      justify-content: center;
+    }
+  
+    h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 25px;
+    }
+    .contact{
+      margin-top: 7px;
+      text-align: center;
+      font-size: 18px;
+    }
+    .form-container,
+    .contact-info {
+      width: 48%;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .contact-info a{
+      margin-left: 8px;
+      text-decoration: none;
+      color: #000000;
+      text-align: center;
+    }
+    .contact-info{
+      text-align: center;
+    }
+    .streetp{
+      margin-left: 20px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      .form-container,
+      .contact-info {
+        width: 100%;
+      }
+    }

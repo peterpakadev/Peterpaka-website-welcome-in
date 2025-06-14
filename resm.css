@@ -1,0 +1,224 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}*
+body{
+  font-family: Arial, sans-serif;
+padding: 0;
+margin: 0;
+background-image: radial-gradient(circle, #B4BAF9,#ACFCB3,#D5ACFCF0);
+margin-bottom: 0;
+font-size: 18px;
+overflow-x: hidden;
+}
+header{
+  background-color: rgba(66, 68, 90, 1);
+  text-align: left;
+  margin: 0;
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 768px){
+  header {
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+    font-size: 10px;
+  }
+}
+
+header nav ul{
+list-style: none;
+margin: 0;
+padding: 5px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+}
+
+header nav ul li{
+  display: inline-block;
+  
+}
+header nav a{
+  color: white;
+  transition: text-shadow 0.1s ease-out;
+  text-decoration: none;
+  justify-content: space-between;
+  font-size: 20px;
+}
+header nav a:hover{
+  color: orange;
+  text-shadow: 2px 2px 5px rgba(106, 13, 156, 1) ;
+}
+header nav a:active{
+  color: purple;
+}
+.img {
+  position: relative;cursor: pointer;
+  left: 40px;
+  right: 0;
+  transition: box-shadow 0.1s ease-out;
+}
+.profile{
+object-fit: cover;
+border-radius: 50%;
+width: 95px;
+height: 93px;
+border: 3px solid rgba(221, 195, 19, 1);
+box-shadow: 0 0 30px rgba(135, 217, 143, 1);
+animation: rotate 3s  1 reverse;
+
+}
+.img :hover {
+  box-shadow: 0 0 10px 5px rgba(255, 105, 180, 0.7);
+  transform: scale(1.05);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.prosummary{
+  background-image: radial-gradient(circle, #B4BAF9,#ACFCB3,#D5ACFCF0);
+  font-size: 25px;
+  color: #C7684B;
+  padding: 1em;
+  line-height: 2;
+  font-weight: 50;
+  text-align: center;
+}
+.pro_p{
+  background-image: radial-gradient(circle, #B4BAF9,#FFECD6,#D5ACFCF0);
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 40;
+  line-height: 1;
+}
+.education{
+  background-image: radial-gradient(circle, #B4BAF9,#D6FFCD,#D5ACFCF0);
+  padding: 2em;
+  color: #DB5;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+}
+.edu_list{
+  background-image: radial-gradient(circle, #B4BAF9,#FAECFF,#D5ACFCF0);
+padding: 1em;
+text-align: center;
+font-size: 15px;
+}
+.edu_list li{
+  list-style: none;
+}
+.work_experience{
+background-image: radial-gradient(circle, #B4BAF9,#ACFCB3,#D5ACFCF0);
+font-size: 25px;
+color: #C7684B;
+padding: 1em;
+line-height: 3;
+font-weight: 50;
+text-align: center;  
+}
+.web_deve{
+  padding: 2em;
+  text-align: center;
+  color: #7042DDE8;
+background-image: radial-gradient(circle, #B4BAF9,#ACFCB3,#D5ACFCF0);
+}
+.work_Parag{
+  background-image: radial-gradient(circle, #B4BAF9,#ACFCB3,#D5ACFCF0);
+  text-align: center;
+  font-weight: 30;
+  line-height: 1;
+font-size: 20px;
+}
+.skills{
+background-image: radial-gradient(circle, #B4BAF9,#ACFCB3,#D5ACFCF0);
+font-size: 25px;
+color: #F20707;
+padding: 1em;
+line-height: 3;
+font-weight: 50;
+text-align: center;
+}
+.skills_list{
+  background-image: radial-gradient(circle, #B4BAF9,#FAECFF,#D5ACFCF0);
+  text-align: center;
+  font-weight: 30;
+  line-height: 1;
+  font-size: 20px;
+}
+.projects{
+background-image: radial-gradient(left, #B4BAF9,right,#ACFCB3,#D5ACFCF0);
+font-size: 25px;
+color: #C7684B;
+padding: 1em;
+line-height: 3;
+font-weight: 50;
+text-align: center;  
+}
+.pro_p{
+    background-image: radial-gradient(circle, #B4BAF9,#FAECFF,#D5ACFCF0);
+  text-align: center;
+  font-weight: 30;
+  line-height: 1;
+  font-size: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.column {
+  flex-basis: 30%;
+  
+}
+
+.column h3 {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.column img{
+  border-radius: 50%;
+}
+.column li {
+  margin-bottom: 5px;
+}
+
+.column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.column a:hover {
+  color: #ccc;
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
