@@ -13,7 +13,7 @@ font-size: 18px;
 overflow-x: hidden;
 }
 h2{
-    background-image: url('/bk g.jpg');
+    background-image: url('./bk g.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
